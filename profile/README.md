@@ -1,4 +1,3 @@
-# Billing System (Admin Web + Billing Batch + Messaging)
 
 > 대용량 통신 요금 명세서(정산서) 발행 + 메시지(SMS/Email) 발송 플랫폼  
 > 구성: **Admin Web(관리자 UI)** + **Billing Batch(정산 배치)** + **MySQL** + **Redis**
@@ -31,7 +30,12 @@
 - Billing Batch → Redis 메시지 큐로 발행 → Messaging(발송 모듈 Mock) 처리
 - 실패 재시도/상태 업데이트는 Admin Web에서 트리거 가능
 
-> <img width="2130" height="974" alt="image" src="https://github.com/user-attachments/assets/6d74f3a2-bac3-4a8d-9864-b9abe4fbb9cd" />  
+> <img width="2130" height="974" alt="image" src="https://github.com/user-attachments/assets/6d74f3a2-bac3-4a8d-9864-b9abe4fbb9cd" />
+- billing batch system 구조
+  - detail_json : { 모든 청구이력의 상품 타입, 상품명, 청구금액, 할인종류별 할인금액, 청구일자 }
+> <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/2ff263c5-2f7f-44dc-b9e4-c2fadd43a094" />
+
+
 
 
 
