@@ -31,7 +31,31 @@
 - Billing Batch → Redis 메시지 큐로 발행 → Messaging(발송 모듈 Mock) 처리
 - 실패 재시도/상태 업데이트는 Admin Web에서 트리거 가능
 
-> <img width="2130" height="974" alt="image" src="https://github.com/user-attachments/assets/6d74f3a2-bac3-4a8d-9864-b9abe4fbb9cd" />
+> <img width="2130" height="974" alt="image" src="https://github.com/user-attachments/assets/6d74f3a2-bac3-4a8d-9864-b9abe4fbb9cd" />  
+
+
+
+## .env.example
+
+팀원은 `.env.example`을 복사해서 `.env`를 생성 후 실행합니다.
+
+```
+MYSQL_ROOT_PASSWORD=change-me
+MYSQL_DATABASE=billing_system
+MYSQL_USER=app
+MYSQL_PASSWORD=change-me
+
+MYSQL_PORT=13306
+REDIS_PORT=16379
+
+SPRING_PROFILES_ACTIVE=docker
+
+SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/billing_system?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+SPRING_DATASOURCE_USERNAME=app
+SPRING_DATASOURCE_PASSWORD=change-me
+
+SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.MySQLDialect
+```
 
 ## 프로젝트 실행
 ```bash
@@ -39,14 +63,19 @@
 docker compose down -v
 docker compose up -d --build
 docker compose ps
-```
+```  
 
-# 더미데이터 import (infra 폴더에서 실행)
+## 더미데이터 다운로드 링크
+https://drive.google.com/file/d/1p9R3s_7uURPHEj7-Fr1QB6tjXsC3asiX/view?usp=sharing
+
+infra폴더에 dump-data.sql 다운받으시면됩니다.
+
+## 더미데이터 import (infra 폴더에서 실행)
 ```
 docker compose exec -T mysql mysql -uapp -papp billing_system < dump-data.sql
 ```
 
-# 접속  
+## 접속  
 Admin Web: http://localhost:8080  
 Billing Batch API: http://localhost:8090
 
