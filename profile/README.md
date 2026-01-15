@@ -11,12 +11,13 @@
 - **infra**
   - 로컬 개발용 인프라 구성 (Docker Compose)
   - 포함: `mysql`, `redis`, `admin-web`, `billing-batch`
-  - 더미데이터(import) 및 개발환경 표준화(Flyway 적용) 담당
+  - 더미데이터(import) 담당
 
 - **admin-web**
   - 관리자용 웹 애플리케이션
   - Thymeleaf 기반 관리자 UI + REST API 제공
   - 메시지 템플릿/예약/재시도 관리, 배치 상태 조회 등 관리자 기능 제공
+  - 개발환경 표준화(Flyway 적용)
 
 - **billing-batch**
   - 정산 배치 및 스케줄러 실행 주체
