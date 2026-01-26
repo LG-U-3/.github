@@ -40,7 +40,8 @@
 - Billing Batch → Redis 메시지 큐로 발행 → Messaging(발송 모듈 Mock) 처리
 - 실패 재시도/상태 업데이트는 Admin Web에서 트리거 가능
 
-<img width="1082" height="601" alt="화면 구조도" src="https://github.com/user-attachments/assets/358eb467-41b5-4c5a-9b3d-fcddc0d34cd0" />
+<img width="2164" height="1202" alt="image" src="https://github.com/user-attachments/assets/77fd29eb-5389-4f0f-9416-cc997e22b52d" />
+
 
 
 
