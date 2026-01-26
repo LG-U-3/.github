@@ -42,6 +42,10 @@
 
 <img width="2164" height="1202" alt="image" src="https://github.com/user-attachments/assets/77fd29eb-5389-4f0f-9416-cc997e22b52d" />
 
+## 2-1) 시퀀스 다이어그램
+<img width="2048" height="1190" alt="image" src="https://github.com/user-attachments/assets/886ead7a-4d04-44b6-bdf8-5e141ec9657f" />
+<img width="2048" height="1190" alt="image" src="https://github.com/user-attachments/assets/7e7d8996-5eb4-4402-ad57-b87841b99dbc" />
+<img width="2048" height="1190" alt="image" src="https://github.com/user-attachments/assets/e6801f8b-f1dc-48b4-a6c2-b0e039c50566" />
 
 
 
