@@ -1,6 +1,6 @@
 
 > 대용량 통신 요금 명세서(정산서) 발행 + 메시지(SMS/Email) 발송 플랫폼  
-> 구성: **Admin Web(관리자 UI)** + **Billing Batch(정산 배치)** + **MySQL** + **Redis**
+> 구성: **Admin Web(관리자 UI)** + **Billing Batch(정산 배치)** + **Message-Sender** +**MySQL** + **Redis**
 
 ---
 
@@ -10,7 +10,7 @@
 
 - **infra**
   - 로컬 개발용 인프라 구성 (Docker Compose)
-  - 포함: `mysql`, `redis`, `admin-web`, `billing-batch`
+  - 포함: `mysql`, `redis`, `admin-web`, `billing-batch` ,`message-sender`
   - 더미데이터(import) 담당
 
 - **admin-web**
